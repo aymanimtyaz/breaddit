@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Breaddit</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="colors.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class="bg-light">
+        <nav id="navbar" class="bg-dark">
+            <h1 id="nav-title"><a href="#" id="nav-title-link" class="text-light link">Breaddit</a></h1>
+            <div id="nav-search">
+                <form>
+                    <input id="nav-search-input" autocomplete="off" placeholder="Search Breaddit">
+                    <i id="icon-search-nav" class="material-icons md-18">search</i>
+                    <button id="nav-search-go">Go</button>
+                </form>
+            </div>
+            <div id="nav-dropdown" class="dropdown">
+                <div id="nav-dropdown-tab" class="dropdown-tab">
+                    <h3 class="dropdown-tab-header"><a href="#" id="nav-dropdown-tab-header" class="text-light link font-standard-2">sir.dough@gmail.com</a></h3>
+                    <i id="nav-dropdown-tab-arrow" class="material-icons md-18 text-light dropdown-tab-arrow">arrow_drop_down</i>
+                </div>
+                <ul class="dropdown-menu bg-white">
+                    <li id="nav-dropdown-menu-item-1" class="dropdown-menu-item"><a class="link text-dark font-standard-2" href="#">Become a Patron!</a></li>
+                    <li id="nav-dropdown-menu-item-2" class="dropdown-menu-item"><a class="link text-dark font-standard-2" href="#">About Us</a></li>
+                    <li id="nav-dropdown-menu-item-3" class="dropdown-menu-item"><a class="link text-dark font-standard-2" href="#">Breaddit Premium</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="content-area bg-primary">
+            <section class="main-content">
+                <div class="main-content-item block-content font-standard-1 bg-white">
+                    <img class="main-content-item-img" src="https://www.theinternationalkitchen.com/wp-content/uploads/2020/01/TIK_FrenchCookingClasses_croissants-1280x720.jpg">
+                    <h2 class="main-content-item-header text-dark font-newsitem-title">'Kroi-saunt' or 'Kwa-son'?</h2>
+                    <h4 class="main-content-item-text text-dark">Learn how to correctly pronounce the name of this famous French bread.</h4>
+                    <a class="main-content-item-link text-dark" href="#">Read on...</a>
+                </div>
+                <div class="main-content-item block-content font-standard-1 bg-white">
+                    <img class="main-content-item-img" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Fresh_made_bread_05.jpg">
+                    <h2 class="main-content-item-header text-dark font-newsitem-title">Baking Your Own Bread Has Never Been This Easy</h2>
+                    <h4 class="main-content-item-text text-dark">Stop your breakfast dependance on disgusting processed supermarket bread, make your own!</h4>
+                    <a class="main-content-item-link text-dark" href="#">Read on...</a>
+                </div> 
+                <div id="last-main-content-item" class="main-content-item block-content font-standard-1 bg-white">
+                    <img class="main-content-item-img" src="https://images-na.ssl-images-amazon.com/images/I/61HpBgmoIqL.jpg">
+                    <h2 class="main-content-item-header text-dark font-newsitem-title">This Week's Reading (Might be communist propaganda)</h2>
+                    <h4 class="main-content-item-text text-dark">The Conquest of Bread, By Peter Kropotkin</h4>
+                    <a class="main-content-item-link text-dark" href="#">Read on...</a>
+                </div>
+                
+            </section>
+            <section class="sidebar-content">
+                <div id="sidebar-subscribe" class="sidebar-content-item block-content bg-white">
+                    <h2 class="sidebar-content-heading text-dark font-heading-1">Subscribe to our newsletter</h2>
+                    <form>
+                        <input class="sidebar-input" autocomplete="off" placeholder="Email">
+                        <button id="sidebar-input-button">Subscribe</button>
+                    </form>
+                </div>
+                <div id="sidebar-slider">
+                    <div class="sidebar-content-item block-content bg-white top-margin-50">
+                        <h4 id="sidebar-quick-links" class="sidebar-content-heading text-dark font-heading-1">Quick Links</h4>
+                        <div class="flex">
+                            <ul class="sidebar-list">
+                                <li class="sidebar-link"><a href="#" class="link font-link">Bread News</a></li>
+                                <li class="sidebar-link"><a href="#" class="link font-link">Bread Technology</a></li>
+                                <li class="sidebar-link"><a href="#" class="link font-link">Bread Culture</a></li>
+                                <li class="sidebar-link"><a href="#" class="link font-link">Bread Fashion</a></li>
+                                <li class="sidebar-link"><a href="#" class="link font-link">Bread Politics</a></li>
+                            </ul>
+                            <ul class="sidebar-list">
+                                <li class="sidebar-link"><a href="#" class="link font-link">Contact</a></li>
+                                <li class="sidebar-link"><a href="#" class="link font-link">Careers</a></li>
+                                <li class="sidebar-link"><a href="#" class="link font-link">Remove ads</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="ad-section">
+                        <div id="ad-block-1" class="sidebar-ad-block block-content top-margin-25 bg-white">
+                            <h4 class="sidebar-ad-heading text-muted">Ad</h4>
+                            <span class="material-icons md-18 close-button">close</span>
+                            <img class="sidebar-ad-img" src="https://bloximages.newyork1.vip.townnews.com/winchesterstar.com/content/tncms/assets/v3/editorial/e/af/eafc0812-1460-11e7-8119-c739fd107244/58db7c7f50ba9.image.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
+        <script src="nav.js"></script>
+        <footer class="bg-secondary" style="height: 500px; width: 100%">
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+    transition: background 0.5s;
+    z-index: 2;
+}
+
+#nav-title {
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+    display: block;
+    float: left;
+    font-family: 'Ranchers', cursive;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 7px;
+    transition: opacity 0.3s;
+}
+
+#nav-search {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    width: max-content;
+    transition: opacity 0.3s;
+}
+
+#nav-search-input {
+    position: absolute;
+    display: inline-block;
+    border: 1px solid gray;
+    padding-left: 15px;
+    font-size: 17px;
+    max-width: 650px;
+    margin: 10px;
+    height: 28px;
+    width: 350px;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#nav-search-input.active {
+    width: 650px;
+    opacity: 100%;
+    outline: none;
+}
+
+#icon-search-nav {
+    position: absolute;
+    left: 345px;
+    top: 15px;
+    color: gray;
+    transition: left 0.5s;
+}
+
+#icon-search-nav.active {
+    left: 645px;
+    opacity: 100%;
+}
+
+#nav-search-go {
+    position: absolute;
+    border: 1px solid white;
+    padding: 5px;
+    height: 32px;
+    left: 390px;
+    top: 10px;
+    border-radius: 2px;
+    transition: left 0.5s;
+}
+
+#nav-search-go.active {
+    left: 690px;
+    opacity: 100%;
+}
+
+#nav-dropdown {
+    position: relative;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+    transition: opacity 0.3s;
+}
+
+.dropdown-tab {
+    width: max-content;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    right: 0px;
+}
+
+.dropdown-tab-header {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+.dropdown-tab-arrow {
+    display: inline-block;
+    margin-top: 14px;
+    cursor: default;
+}
+
+.dropdown-menu {
+    display: none;
+    width: fit-content;
+    min-width: 200px;
+    margin-top: 50px;
+    text-align: left;
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 0px;
+    cursor: default;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu-item {
+    display: block;
+    margin-right: 0px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-top: none;
+    cursor: default;
+}
+
+.dropdown-menu-item.link {
+    cursor: pointer;
+}
+
+.top-stories-header-block {
+    margin-top: 10px;
+    width: fit-content;
+    display: block;
+    margin-bottom: 25px;
+    transition-property: none;
+}
+
+#top-stories-header {
+    display: inline;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 5px;
+}
+
+.content-area {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+}
+
+.main-content {
+    display: inline;
+    padding-top: 25px;
+    margin-left: 25px;
+}
+
+.main-content-item {
+    display: block;
+    margin: auto;
+    width: 650px;
+    margin-bottom: 25px;
+}
+
+.main-content-item:hover {
+    border: 1px solid darkslategray;
+}
+
+.main-content-item-header {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.main-content-item-text {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.main-content-item-link {
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.main-content-item-img {
+    max-width: 630px;
+    max-height: 630px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.sidebar-content {
+    position: relative;;
+    display: block;
+    padding-top: 25px;
+    margin-left: 25px;
+}
+
+.sidebar-content-item {
+    display: block;
+    width: 300px;
+}
+
+
+.sidebar-ad-block {
+    display: block;
+    width: 300px;
+}
+
+.sidebar-content-heading {
+    display: inline-block;
+    /* float: left; */
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sidebar-input {
+    width: 90%;
+    display: block;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 2px;
+}
+
+#sidebar-input-button {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.sidebar-ad-img {
+    width: 300px;
+}
+
+.sidebar-ad-heading {
+    display: block;
+    float: left;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#sidebar-quick-links {
+    margin-left: 40px;
+}
+
+footer {
+    height: 500px;
+    width: 100%;
+}
+
+
+.block-content {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.top-margin-25 {
+    margin-top: 25px;
+}
+
+.close-button {
+    text-align: right;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.remove-ad {
+    display: none;
+}
+
+.flex {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding-left: 0px;
+    float: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fix-to-viewport {
+    position: fixed;
+    top: 0px;
+}
+
+.top-margin-50 {
+    margin-top: 50px;
+}
+
+.sidebar-link {
+    padding: 0px;
+    padding-bottom: 3px;
+}

@@ -1,0 +1,40 @@
+.bg-image {
+    background-image: url(https://wallpapercave.com/wp/wp4098813.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;   
+    background-attachment: fixed;
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-dark {
+    background: #42332E;
+}
+
+.bg-light {
+    background: #CFAC89;
+}
+
+.bg-primary {
+    background:#C47647;
+}
+
+.bg-secondary {
+    background: #152238;
+}
+
+.text-dark {
+    color: black;
+}
+
+.text-light {
+    color: white;
+}
+
+.text-muted {
+    opacity: 80%;
+    color: gray;
+}
