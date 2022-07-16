@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     var AD_COUNT = 0
-    $('.close-button').click(function() { 
+    $('#ad-close-button').click(function() { 
         AD_COUNT++;
         var btn = this
         $(btn).parent().addClass('remove-ad')
